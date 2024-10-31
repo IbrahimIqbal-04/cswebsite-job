@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+           html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Ensuring the content section takes full available space */
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Header Section -->
+        <header>
+            <div class="logo">
+                <img src="images/download.png" alt="Logo">
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="job.html">Find a Job</a>
+                <a href="#">About</a>
+                <a href="Contact.html">Contact Us</a>
+            </nav>
+            <div class="header-buttons">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="register">Register</a>
+            </div>
+        </header>
+        
+        <!-- Form Section -->
+        <form action="submit.php" method="POST">
+            <div class="form-container">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" name="email" placeholder= >
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingNumber" name="contact_number" placeholder=>
+                    <label for="floatingNumber">Contact Number</label>  
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="comments" style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
